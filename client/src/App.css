@@ -1,1 +1,10 @@
-
+.card{
+    padding: 20px 20px 50px 10px;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  

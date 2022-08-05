@@ -1,11 +1,11 @@
-import logo from './logo.svg';
-
+import React from 'react';
+import './App.css'
 import Mainrouter from './compnent/mainrouter';
 function App() {
   return (
     <div>
       <Mainrouter/>
-      {/* sar changement */}
+      
     </div>
   );
 }

@@ -7,6 +7,7 @@ export default function navbar() {
       <Link to={'/'} class="brand-logo">AGIM</Link>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><Link to={'/'}>Sass</Link></li>
+        <li><Link to={'/decouvrir'}>Découvrir</Link></li>
         <li><Link to={'/Espace'}>Espace d'échange</Link></li>
         <li><Link to={'/Gestion'}>Gestion du matériel</Link></li>
       </ul>
