@@ -4,8 +4,7 @@ import Mainrouter from './compnent/mainrouter';
 function App() {
   return (
     <div>
-      <Mainrouter/>
-      
+
     </div>
   );
 }
