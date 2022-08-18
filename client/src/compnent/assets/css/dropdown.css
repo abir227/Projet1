@@ -1,0 +1,22 @@
+.dropdown{
+    height:2rem;
+}
+
+.dropdown-menu:hover{
+    background-color : #0902524e;
+}
+
+.dropdown-1{
+    color:black ;
+    background-color: #87cefaa6;
+}
+
+.dropdown-2{
+    color:black ;
+    background-color: #00bfff6b;
+}
+
+.dropdown-3{
+    color:black ;
+    background-color: #1e8fff88;
+}

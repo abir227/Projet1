@@ -2,15 +2,19 @@ import React from 'react'
 import agim2 from '../compnent/assets/images/agim2.png'
 import { Link } from 'react-router-dom'
 import './assets/css/App.css'
+import Dropdown from '../compnent/dropdown'
+import DropdownS from '../compnent/dropdownS'
 export default function navbar() {
   return (
     <div><nav>
     <div class="nav-wrapper blue darken-4">
-      <Link to={'/'} class="brand-logo"><img src={agim2} alt=" " width={60}/></Link> 
+      <Link to={'/'} class="brand-logo"><img src={agim2} alt=" " width={74}/></Link> 
       {/* <Link to={'/'} class="brand-logo">AGIM</Link> */}
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><Link to={'/'}>Découvrir</Link></li>
-        <li><Link to={'/Espace'}>S'impliquer</Link></li>
+        <li><Dropdown/>  </li>
+        <li><pre>  </pre></li>
+        <li><Link to={'/Gestion'}></Link></li>
+        <li>  <DropdownS/>  </li>
         <li><Link to={'/Gestion'}>Log in</Link></li>
         <li><Link to={'/Gestion'}></Link></li>
         <li><Link to={'/Gestion'}></Link></li>
@@ -22,12 +26,14 @@ export default function navbar() {
               <a class="dropdown-item" href="#">Bibliothèque Juridique</a>
             </div>
           </li>  */}
-       <li>       
+        {/* <li>       
           <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Drop Me!</a>
 
          <ul id='dropdown1' class='dropdown-content'>
           <li><a href="#!">one</a></li>
-          <li><a href="#!">two</a></li> </ul> </li>
+          <li><a href="#!">two</a></li> </ul> </li>  */}
+         
+
 
         
       </ul>
