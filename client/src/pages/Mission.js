@@ -1,7 +1,8 @@
 import React from 'react'
 import Navbar from '../compnent/navbar'
-import pic from '../compnent/assets/images/agim2.png'
- import picM from '../compnent/assets/images/agim2.png'
+import miss from '../compnent/assets/images/miss.png'
+import equipe from '../compnent/assets/images/Equipe.jpg'
+import '../compnent/assets/css/mission.css'
 import { useNavigate } from 'react-router-dom'
 // import '../App.css'
 export default function Decouvrir() {
@@ -10,13 +11,13 @@ export default function Decouvrir() {
     navigate('/bib')
   }
   return (
-    <div>
+    <div class="all">
       <Navbar />
-      <div class="row ">
+      <div class="row " >
         <div class="col s12 m6">
           <div class="card z-depth-4" >
-            <div class="card-image">
-              <img className='image' src={pic} />
+            <div class="card-image" class="all">
+              <img className='image' src={equipe} width={'40'}/>
               <span class="card-title ">About us</span>
             </div>
             <div class="card-content">
@@ -32,8 +33,8 @@ export default function Decouvrir() {
 
         <div class="col s12 m6">
           <div class="card z-depth-4" >
-            <div class="card-image">
-              <img className='image' src={picM} />
+            <div class="card-image" class="all">
+              <img className='image' src={miss} />
               <span class="card-title">notre Mission</span>
             </div>
             <div class="card-content">
