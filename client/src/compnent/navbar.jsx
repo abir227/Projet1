@@ -15,7 +15,7 @@ export default function navbar() {
         <li><pre>  </pre></li>
         <li><Link to={'/Gestion'}></Link></li>
         <li>  <DropdownS/>  </li>
-        <li><Link to={'/Gestion'}>Log in</Link></li>
+        <li><Link to={'/Signin'}>Log in</Link></li>
         <li><Link to={'/Gestion'}></Link></li>
         <li><Link to={'/Gestion'}></Link></li>
          {/* <li class="nav-item dropdown">

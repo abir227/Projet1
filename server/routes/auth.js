@@ -2,6 +2,7 @@ const express = require('express')
 const router = express.Router()
 const mongoose = require('mongoose')
 const User = mongoose.model("user")
+const Bureau=mongoose.model("bureau")
 //const crypto = require('crypto')
 //const bcrypt = require('bcryptjs')
 // const jwt = require('jsonwebtoken')
@@ -145,5 +146,41 @@ console.log(user.body)}).catch(err=>{console.log('error',err)})
 //     })
 // })
 
+router.post('/sajel',(req,res)=>{
+   const {nom,password} = req.body
+   if (!nom || !password) {
+      return res.status(422).json('saisir vos cordonnées')
+  }
+  Bureau.findOne({ nom: nom })
+  .then((savedUser) => {
+      if (savedUser) {
+          return res.status(422).json({ message: "utilisateur existant" })
+          
+      }
+      const bureau= new Bureau({nom,password})
+      bureau.save().then(birou=>{res.json('savved')})
+})
+})
+
+ router.post('/signin',(req,res)=>{
+   const {nom,password} = req.body
+   if (!nom || !password) {
+      return res.status(422).json('saisir vos cordonnées')
+  }
+  Bureau.findOne({nom: nom}).then((existUser)=>{
+   if (existUser){
+      console.log('connected successfully')
+      const {_id,nom,password}=existUser
+      res.json({bureau:{_id,nom,password}})
+   }
+
+  })
+
+ })
+
+ router.get('/materiaux',(req,res)=>{
+   User.find().then(mats=>{res.json({mats})
+console.log(mats)})
+ })
 
 module.exports = router
