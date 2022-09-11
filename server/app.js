@@ -22,9 +22,15 @@ mongoose.connection.on('error',(err)=>{
 
 require("./models/user")
 require("./models/bureau")
+require("./models/formulaire")
+require("./models/formulaire2")
+require("./models/siége")
 
 app.use(express.json())
 app.use(require('./routes/auth'))
+app.use(require('./routes/formulaire'))
+app.use(require('./routes/formulaire2'))
+app.use(require('./routes/Siége'))
 
 app.get('/',(req,res)=>{
     res.send ('hello world')

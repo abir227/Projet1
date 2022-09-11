@@ -13,8 +13,8 @@ export default function Dropdown() {
         <div className='dropdown-menu' onMouseEnter={showDropdown} onMouseLeave={ hideDropdown}>
                     S'impliquer   
             {state ?( <ul className='dropdown-list'  onMouseEnter={showDropdown}>
-                <li className='dropdown-1' ><Link to={'/membre'}>Rejoignez notre communauté </Link></li>
-                <li className='dropdown-2' ><Link to={'/benevole'}>Devenir Bénévole</Link></li>
+                <li className='dropdown-1' ><Link to={'/form2'}>Rejoignez notre communauté </Link></li>
+                <li className='dropdown-2' ><Link to={'/form'}>Devenir Bénévole</Link></li>
             </ul>):null}
            
         </div>

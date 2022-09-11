@@ -1,0 +1,65 @@
+body{
+    font-family: 'Times New Roman';
+
+}
+.t1{
+    border-spacing: 15px;
+    padding: 10px;
+}
+#button{
+    margin-top: 10%;
+    margin-left: 25%;
+    background-color: blue;
+
+    font-weight: bolder;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    width: 300px;
+    padding: 5px;
+    border-color: blue;
+}
+#button2{
+    margin-top: 10%;
+    margin-left: 1%;
+    background-color: blue;
+
+    font-weight: bolder;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    width: 300px;
+    padding: 5px;
+    border-color: blue;
+}
+#sign{
+ margin-top: 20%;
+margin-left: 30%; 
+margin-bottom: 10%;
+text-align: center;
+background-color: rgba(0, 0, 255, 0.077);
+}
+
+
+#tab {
+    height: 50px;
+    vertical-align: bottom;
+    border-bottom: 1px solid #ddd;
+
+    border: 1px solid #333;
+  }
+  th{
+    background-color:rgba(0, 0, 255, 0.077);
+   
+  }
+
+  .Popbtn {
+    position: fixed;
+    left: 50%;
+ 
+    z-index: -1;
+
+}
+#Dbtn{
+  cursor: pointer;
+}

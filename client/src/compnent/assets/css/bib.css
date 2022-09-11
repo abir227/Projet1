@@ -1,7 +1,13 @@
 .contenu{
-    padding-top: 500px;
+    /* padding-top: 500px; */
+    background-color: #e8e2da ;
+    padding-left: 10px; 
 }
 
 .all{
     background-color: #e8e2da ;
+    max-height: 100%;
+    overflow-y: scroll;
+    
+    
 }

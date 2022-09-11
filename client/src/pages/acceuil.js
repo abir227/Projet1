@@ -10,7 +10,7 @@ import '../compnent/assets/css/Acceuil.css'
 
 export default function acceuil() {
   return (
-    <div class="all">
+    <div className="all">
         <Navbar/>
         <h3 class="def">AGIM : ASSOCIATION GÉNÉRALE DES INSUFFISANTS MOTEURS</h3>
         <div class="tout">

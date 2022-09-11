@@ -16,7 +16,7 @@ export default function Decouvrir() {
       <div class="row " >
         <div class="col s12 m6">
           <div class="card z-depth-4" >
-            <div class="card-image" class="all">
+            <div class="card-image" className="all">
               <img className='image' src={equipe} width={'40'}/>
               <span class="card-title ">About us</span>
             </div>
@@ -33,7 +33,7 @@ export default function Decouvrir() {
 
         <div class="col s12 m6">
           <div class="card z-depth-4" >
-            <div class="card-image" class="all">
+            <div class="card-image" className="all">
               <img className='image' src={miss} />
               <span class="card-title">notre Mission</span>
             </div>

@@ -10,7 +10,7 @@ import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 // Worker
 import { Worker } from '@react-pdf-viewer/core'; // install this library
 import loi from '../pdf/loi.pdf'
-
+import '../compnent/assets/css/docs.css'
 export default function Mission() {
   const [defaultPdfFile]=useState(loi);
   //Create new plugin instance
